@@ -9,7 +9,7 @@
 **Hành trình triển khai AI · Ý tưởng → Production**
 Đường đi của một sản phẩm AI từ lúc có ý tưởng đến lúc chạy thật. Day 28 học 3 phase ở giữa: Frame → Solution → Pilot Plan. Hai đầu (Ý tưởng đầu vào; chạy thật/Production về sau) không học hôm nay.
 
-**Double Diamond**
+**[Double Diamond](https://www.thefountaininstitute.com/blog/what-is-the-double-diamond-design-process)**
 Lăng kính tư duy nhắc lại từ Day 2: mỗi phase đều có pha **giãn ra** (◇ — mở rộng nhiều khả năng) rồi **siết lại** (◆ — chốt một hướng). Đây là *cách soi* công việc, không phải các bước phải làm.
 
 **Frame / Solution / Pilot Plan**

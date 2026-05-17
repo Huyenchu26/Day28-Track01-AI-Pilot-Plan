@@ -8,7 +8,7 @@ Day 28 có **1 lab lớn theo nhóm 3** (~70 phút), chạy trọn một vòng t
 
 Đây đúng là việc một PM/PO AI làm ngoài doanh nghiệp: stakeholder giao một "công cụ AI" quá lớn — bạn phải tách nhỏ, chọn đúng phần làm trước, và bảo vệ lựa chọn bằng lập luận chứ không bằng slide đẹp.
 
-Lab đi qua **3 phase** (mỗi phase là một vòng Double Diamond — mở rộng rồi thu hẹp, nhắc lại từ Day 2):
+Lab đi qua **3 phase** (mỗi phase là một vòng [Double Diamond](https://www.thefountaininstitute.com/blog/what-is-the-double-diamond-design-process) — mở rộng rồi thu hẹp, nhắc lại từ Day 2):
 
 - **01-frame** — Frame: nghe đúng Big Ask → tách nhỏ → chọn Quick Win → đóng khung vấn đề (Problem Framing).
 - **02-solution** — Solution: tìm lời giải đã có sẵn (deep research) → chốt Build/Buy/Boost/Partner + data & người review → bản vẽ trực quan.
