@@ -55,7 +55,7 @@ Câu hỏi phụ:
 - **Ego check (1 câu thành thật)**: Ban đầu nhóm nghiêng "build bot Discord" vì nghe ngầu; sau research chọn Boost vì **cần chứng minh giảm 30% bài trả vòng 1**, không cần sản phẩm đẹp.
 - **"Đi từ 5 lên"**: Copy workflow pre-grader + guardrail Colleague AI (không tin auto-score) — chỉ thay domain bằng rubric `03-pilot-plan` Day 28.
 - **Tool / API / vendor cần + ước lượng chi phí thô**:
-  - **Claude / GPT API** — ~$0.01–0.05/bài (🧮 150 nhóm × 2 lần check ≈ **$5–15/pilot** nếu dùng model rẻ + prompt ngắn).
+  - **Claude / GPT API** — ~$0.01–0.05/bài ( 150 nhóm × 2 lần check ≈ **$5–15/pilot** nếu dùng model rẻ + prompt ngắn).
   - **Google Form / link nộp** — $0 (có sẵn).
   - **Script Python/Node** gọi API + regex heading — $0 (nhóm tự viết ~50 dòng, không coi là Build platform).
   - Tùy chọn: **GitHub Action** check markdown trên PR — $0 tier public repo.
@@ -65,8 +65,8 @@ Câu hỏi phụ:
 | Cần gì | Có sẵn trong AI20k? | Trong lab dùng (mẫu/giả định) | Privacy? |
 |---|---|---|---|
 | **Rubric Day 28** (scope, metric, exit, budget, adoption) | Có — template trong repo mẫu GV | Copy rubric từ `templates/` + checklist 7 mục A3 | Public template — OK |
-| **Bài nộp học viên** (markdown) | Có khi nộp GitHub/LMS | 10–20 bài mẫu 🧮 + bài thật pilot (opt-in, không paste Discord DM) | Chỉ lưu hash/log flag, không train model; xóa sau pilot |
-| **Baseline 30% trả vòng 1** | Chưa đo chính thức | Coach đếm tuần 1 pilot vs 🧮 giả định từ Problem Framing | Aggregate only |
+| **Bài nộp học viên** (markdown) | Có khi nộp GitHub/LMS | 10–20 bài mẫu + bài thật pilot (opt-in, không paste Discord DM) | Chỉ lưu hash/log flag, không train model; xóa sau pilot |
+| **Baseline 30% trả vòng 1** | Chưa đo chính thức | Coach đếm tuần 1 pilot vs giả định từ Problem Framing | Aggregate only |
 | **Golden set để calibrate** | Không | Coach gắn nhãn 15 bài: đủ/thiếu từng mục rubric | Nội bộ coach |
 
 - **Output nào rủi ro cao** (sai gây hậu quả):
@@ -75,7 +75,7 @@ Câu hỏi phụ:
   - Học viên **tin checklist AI = điểm chính thức** → vi phạm formative.
 - **Ai review + bao nhiêu mẫu + pass/fail theo gì**:
   - **Lab coach** review **100%** các bài bị flag "thiếu nghiêm trọng" lần đầu; **spot-check 20%** bài AI báo "đủ".
-  - **Pass pilot** nếu: false positive (AI báo thiếu mà coach thấy đủ) **< 15%** 🧮 trên golden set 15 bài; **≥ 20%** giảm bài trả vòng 1 (so baseline).
+  - **Pass pilot** nếu: false positive (AI báo thiếu mà coach thấy đủ) **< 15%** trên golden set 15 bài; **≥ 20%** giảm bài trả vòng 1 (so baseline).
   - Instructor có quyền **tắt chặn cứng**, chuyển chỉ cảnh báo.
 - **Có cần citation / nói "không biết" khi thiếu nguồn không**: Có — mỗi mục rubric AI phải trích **đoạn trong bài nộp** hoặc trả `MISSING` + không bịa đoạn trích; mục cần số (budget, metric) nếu không thấy số → `MISSING (no number cited)`.
 
@@ -91,7 +91,7 @@ TRƯỚC (hiện tại):
         →  Feedback "thiếu Budget / Exit criteria"
         →  Học viên sửa → Submit lại
         →  Coach chấm lại
-  (🧮 ~45/150 nhóm × 5 phút ≈ 225 phút coach/đợt nộp)
+  ( ~45/150 nhóm × 5 phút ≈ 225 phút coach/đợt nộp)
 
 SAU (có AI Rubric Pre-Check — Boost):
   [Học viên dán markdown + bấm "Kiểm tra"]
@@ -143,7 +143,7 @@ Chỗ con người review (output rủi ro cao) nằm ở:
 2. *"Cảnh báo mềm (vẫn cho nộp) hay chặn cứng — anh/chị chọn policy nào cho tuần pilot?"*
 3. *"Mức false positive bao nhiêu thì coach mất tin — ngưỡng dừng pilot?"*
 
-**Input làm lộ điểm yếu (chuẩn bị trước):** Bài viết đủ heading nhưng **nội dung rỗng** ("Budget: TBD") — rule pass, LLM phải báo ⚠️; bài tiếng Việt lẫn Anh không chuẩn heading.
+**Input làm lộ điểm yếu (chuẩn bị trước):** Bài viết đủ heading nhưng **nội dung rỗng** ("Budget: TBD") — rule pass, LLM phải báo; bài tiếng Việt lẫn Anh không chuẩn heading.
 
 ---
 
@@ -158,6 +158,3 @@ Chỗ con người review (output rủi ro cao) nằm ở:
 
 ⚑ Coach kiểm tra ở Mốc 3: *"Stakeholder nhìn vào đâu để hiểu flow? Mockup/sketch/demo đâu?"* Chỉ nói bằng chữ = chưa qua.
 
-Sau bước này, mở `../03-pilot-plan/1-pilot-plan.md`.
-
-*Liên quan: handbook §A5+§A6 · `templates/demo-examples.md` · `prompts/05-demo-challenge.md`*
