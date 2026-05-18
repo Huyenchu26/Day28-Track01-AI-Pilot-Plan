@@ -35,23 +35,25 @@ Câu hỏi phụ (tự trả lời trước khi điền):
 
 ### Trả lời
 
-1. **Original Ask** (stakeholder nói gì, nguyên văn): [...]
-2. **Reframed problem** (vấn đề thật sau khi tách): [...]
-3. **Current workflow** (hiện tại đang xử lý thế nào, kể cả "không ai làm gì"): [...]
+1. **Original Ask** (stakeholder nói gì, nguyên văn): "AI hỗ trợ học viên làm lab/code/bài tập: gợi ý bước tiếp theo, debug, review trước khi nộp — nhưng không làm hộ bài."
+2. **Reframed problem** (vấn đề thật sau khi tách): Học viên nộp bài lab D28 thường thiếu các tiêu chí cơ bản trong rubric (chỉ số, ngân sách, tiêu chí dừng), khiến coach mất thời gian trả lại bài và chấm lại. Cần một công cụ AI tiền kiểm tra tự động rubric trước khi submit để giảm tải cho coach.
+3. **Current workflow** (hiện tại đang xử lý thế nào, kể cả "không ai làm gì"): Học viên làm xong -> Nộp bài -> Coach đọc, phát hiện thiếu mục -> Trả bài (hoặc trừ điểm) -> Học viên sửa nộp lại -> Coach chấm lại từ đầu.
 4. **Pain evidence — bằng SỐ** (ai đau · đau ở khoảnh khắc nào trong việc · tần suất · quy mô; số giả định ghi rõ nguồn giả định):
 
 ```text
-[...]
+- Tần suất/Quy mô: 150 nhóm học viên nộp bài mỗi ngày lab. Khoảng 30% bài nộp (45 nhóm) bị thiếu thông tin cơ bản ngay từ vòng 1.
+- Thời gian lãng phí: Mỗi bài lỗi vặt coach tốn ~5 phút đọc và viết feedback trả lại. Tổng cộng mất 225 phút (gần 4 tiếng) chỉ để nói học viên "bạn thiếu mục ngân sách".
+- Baseline: 30% bài bị trả lại ở vòng 1 do lỗi format/thiếu rubric.
 ```
 
-5. **Affected people** (ai dùng · ai quyết · ai là người review/expert): [...]
-6. **Constraints** (từ `00-context.md`: privacy / human review / citation / budget / formative / adoption): [...]
-7. **Quick Win đã chọn** (1 dòng, lấy từ file `2`): [...]
-8. **Open questions** (còn chưa biết gì — không được để trống): [...]
+5. **Affected people** (ai dùng · ai quyết · ai là người review/expert): Người dùng: Học viên (lúc nộp). Người quyết: Instructor. Người review kết quả: Lab Coach.
+6. **Constraints** (từ `00-context.md`: privacy / human review / citation / budget / formative / adoption): Chấm formative (mang tính góp ý, chưa phải điểm cuối). Cần human review (coach vẫn là người chốt điểm). Budget nhỏ (dùng LLM prompt cơ bản check theo ý).
+7. **Quick Win đã chọn** (1 dòng, lấy từ file `2`): AI tiền kiểm bài nộp theo rubric trước khi submit.
+8. **Open questions** (còn chưa biết gì — không được để trống): AI nên trả lại thông báo chặn không cho nộp, hay chỉ cảnh báo nhưng vẫn cho nộp? Hạn chế việc AI ảo giác báo thiếu mục dù học viên đã viết rồi thì thế nào?
 9. **Validation** (đóng vai owner: *"đúng, đây là vấn đề đáng giải"* — Có / Chưa, vì sao):
 
 ```text
-[...]
+Có. Vấn đề này rất thực tế, rất "đau" với người vận hành (coach). Nó có số liệu đo lường rõ ràng (tiết kiệm 4 tiếng/lần nộp bài) và không can thiệp vào quá trình học lõi của học viên, đáp ứng đủ ràng buộc "không làm thay".
 ```
 
 ---

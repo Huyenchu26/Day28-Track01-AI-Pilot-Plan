@@ -23,15 +23,15 @@ Việc của nhóm hôm nay đúng là việc một PM/PO AI làm ngoài doanh n
 
 ## 2. Track của nhóm (điền sau khi nhận track card)
 
-- **Track số / tên**: [...]
+- **Track số / tên**: 3 / AI Lab Copilot
 - **Big Ask — chép nguyên văn câu yêu cầu trong track card**:
 
 ```text
-[...]
+AI hỗ trợ học viên làm lab/code/bài tập: gợi ý bước tiếp theo, debug, review trước khi nộp — nhưng không làm hộ bài.
 ```
 
-- **Công cụ lớn này phục vụ ai** (học viên / coach / instructor / admin): [...]
-- **2 Red Flag đáng lo nhất (chép từ track card)**: 1. [...]  2. [...]
+- **Công cụ lớn này phục vụ ai** (học viên / coach / instructor / admin): Học viên, lab coach, instructor
+- **2 Red Flag đáng lo nhất (chép từ track card)**: 1. AI làm hộ bài, học viên không học.  2. Không phân biệt "hint" và "đáp án".
 
 ---
 
@@ -49,7 +49,7 @@ Việc của nhóm hôm nay đúng là việc một PM/PO AI làm ngoài doanh n
 
 ## 4. Ghi chú thêm (tùy nhóm)
 
-[Hạn chót, quy mô data giả định nhóm dùng, ví dụ câu hỏi thật, bất kỳ thứ gì giúp AI hiểu context.]
+[Quy mô data giả định: ~150 nhóm nộp bài D28. Hạn chót: Pilot được trong buổi D28. Học viên đang kẹt nhiều ở bước lập Pilot Plan.]
 
 ---
 
